@@ -1,0 +1,274 @@
+@font-face {
+    font-family: 'Arial';
+    src: local('Arial'), 
+         url('../../assets/fonts/arial/arial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: local('Georgia'), 
+         url('../../assets/fonts/georgia/georgia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hidden {
+    display: none;
+    transition: 0.25s ease-out; 
+}
+
+.hidden_close {}
+
+.popup_center {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.popup {
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    /*outline: 2px solid #ff11df;*/
+    background: #FAFAFA;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 9px;
+}
+
+.popup__cls-btn {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    left: 890px;
+    top: -53px;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
+
+.popup_x {
+    text-align: center;
+    color: black;
+    margin-top: 18px;
+    font-size: 11px;
+    font-weight: 1000;
+}
+
+.popup__cls-btn:link, .popup__cls-btn:visited {
+    text-decoration: none;
+}
+
+.popup__cls-btn:hover {
+    cursor: pointer;
+    background: #F1CDB3;;
+}
+
+.popup__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.popup__img {
+    width: 500px;
+    height: 500px;
+    /*outline: 2px solid #ff11df;*/
+    border-radius: 9px;
+}
+
+.popup__info {
+    width: 351px;
+    height: 362px;
+    margin: 50px 20px 88px 0;
+    /*outline: 2px solid #ff11df;*/
+    margin-left: 1px;
+}
+
+.popup__name {
+    height: 45px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #000000;
+    /*outline: 2px solid #ff11df;*/
+}
+
+.popup__animal {
+    height: 23px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #000000;
+    /*outline: 2px solid #ff11df;*/
+    margin-top: 10px;
+}
+
+.popup__description {
+    width: 350px;
+    height: 102px;
+    margin-top: 40px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #000000;
+    /*outline: 2px solid #ff11df;*/
+}
+
+.popup__pasport {
+    margin-top: 40px;
+    max-width: 350px;
+    height: 102px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*outline: 2px solid #ff11df;*/
+}
+
+.popup__pasport-item {
+    height: 18px;
+    /*outline: 2px solid #ff11df;*/
+    padding-left: -20px;
+}
+
+.popup__pasport-text {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #000000;
+}
+
+.popup__pasport-item-text {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #000000;
+}
+
+ul {
+    padding: 0;
+    margin-left: 20px;
+   }
+
+li {
+    color: #F1CDB3;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .popup {
+        width: 630px;
+        height: 350px;
+    }
+
+    .popup__cls-btn {
+        left: 621px;
+    }
+
+    .popup__img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .popup__info {
+        width: 260px;
+        height: 303px;
+        margin: 10px 9px 37px 0;
+    }
+
+    .popup__description {
+        width: 260px;
+        height: 98px;
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    .popup__pasport {
+        margin-top: 20px;
+        max-width: 260px;
+        height: 87px;
+    }
+    
+    .popup__pasport-item {
+        height: 18px;
+        /*outline: 2px solid #ff11df;*/
+        padding-left: -20px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .popup {
+        width: 240px;
+        height: auto;
+    }
+
+    .popup__cls-btn {
+        left: 218px;
+    }
+
+    .popup__img {
+        display: none;
+    }
+
+    .popup__info {
+        width: 220px;
+        height: auto;
+        margin: 10px;
+    }
+
+    .popup__name {
+        text-align: center;
+        height: auto;
+     }
+
+     .popup__animal {
+        text-align: center;
+        height: auto;
+    }
+
+    .popup__description {
+        width: 220px;
+        height: auto;
+        margin-top: 20px;
+        font-size: 13px;
+        text-align: justify;
+    }
+
+    .popup__pasport {
+        margin-top: 20px;
+        max-width: 260px;
+        height: auto;
+    }
+    
+    .popup__pasport-item {
+        height: auto;
+        /*outline: 2px solid #ff11df;*/
+        padding-left: -20px;
+    }
+
+}
