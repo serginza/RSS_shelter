@@ -1,2 +1,2 @@
-# serginza-JSFE2022Q1
-Private repository for @serginza
+Done in private repository for @serginza
+Deploy: https://serginza.github.io/RSS_shelter/shelter
