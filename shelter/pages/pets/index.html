@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Pets-page</title>
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="popup.css">
+        <script defer src="script.js"></script>
+        <script defer src="popup.js"></script>
+	</head>
+	<body>
+        <div class="popup_center hidden">
+            <div class="popup">
+                <div class="popup__content">
+                    <div class="popup__cls-btn"><div class="popup_x">╳</div></div>
+                    <img class="popup__img">
+                    <div class="popup__info">
+                        <div class="popup__name"></div>
+                        <div class="popup__animal"></div>
+                        <div class="popup__description"></div>
+                        <ul class="popup__pasport">
+                            <li class="popup__pasport-item"><span class="popup__pasport-text">Age: </span><span class='popup__pasport-item-text popup__age'></span></li>
+                            <li class="popup__pasport-item"><span class="popup__pasport-text">Inooculations: </span><span class='popup__pasport-item-text popup__inooculations'></span></li>
+                            <li class="popup__pasport-item"><span class="popup__pasport-text">Diseases: </span><span class='popup__pasport-item-text popup__diseases'></span></li>
+                            <li class="popup__pasport-item"><span class="popup__pasport-text">Parasites: </span><span class='popup__pasport-item-text popup__parasites'></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+	    <div class="page">
+            <header class="header">
+                <div class="header__menu">
+                    <a class="header__logo" href="../main/index.html">
+                        <div class="header__logo_title">Cozy House</div>
+                        <div class="header__logo_subtitle">Shelter for pets in Boston</div>
+                    </a>
+                    <nav class="header__nav">
+                        <div class="header__burger" type="button">     
+                            <img src="../../assets/icons/burger-pets.svg" alt="icon-pet-food">
+                        </div>
+                        <nav class="header__nav-menu">
+                            <a href="../main/index.html" class="header_text">About the shelter</a>
+                            <a href="#!" class="header_text active">Our pets</a>
+                            <a href="../main/index.html#help" class="header_text">Help the shelter</a>
+                            <a href=#footer class="header_text">Contacts</a>
+                        </nav>
+                        <div class="header__nav-menu_burger">
+                            <nav class="header_text-container">
+                                <a href="../main/index.html" class="header_text">About the shelter</a>
+                                <a href="#!" class="header_text active">Our pets</a>
+                                <a href="../main/index.html#help" class="header_text">Help the shelter</a>
+                                <a href=#footer class="header_text">Contacts</a>
+                            </nav>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <div class="content">
+                <div class="our-friends">
+                    <div class="our-friends__content">
+                        <div class="our-friends__heading"><h1 class="our-friends__heading">Our friends who <br/> are looking for a house</h1></div>
+                        <div class="our-friends__card-container">
+                            <div class="our-friends__cart">
+                                <img src="../../assets/images/katrine.png" alt="pets-katrine" class="our-friends__pets">
+                                <div class="our-friends__name">Katrine</div>
+                                <a class="our-friends__button-secondary" href="#!"><div class="our-friends__button-secondary_text">Learn more</div></a>
+                            </div>
+                            <div class="our-friends__cart">
+                                <img src="../../assets/images/pets-jennifer.png" alt="pets-jennifer" class="our-friends__pets">
+                                <div class="our-friends__name">Jennifer</div>
+                                <a class="our-friends__button-secondary" href="#!"><div class="our-friends__button-secondary_text">Learn more</div></a>
+                            </div>
+                            <div class="our-friends__cart">
+                                <img src="../../assets/images/pets-woody.png" alt="pets-woody" class="our-friends__pets">
+                                <div class="our-friends__name">Woody</div>
+                                <a class="our-friends__button-secondary" href="#!"><div class="our-friends__button-secondary_text">Learn more</div></a>
+                            </div>
+                            <div class="our-friends__cart">
+                                <img src="../../assets/images/pets-sophia.png" alt="pets-sophia" class="our-friends__pets">
+                                <div class="our-friends__name">Sophia</div>
+                                <a class="our-friends__button-secondary" href="#!"><div class="our-friends__button-secondary_text">Learn more</div></a>
+                            </div>
+                            <div class="our-friends__cart">
+                                <img src="../../assets/images/pets-timmy.png" alt="pets-timmy" class="our-friends__pets">
+                                <div class="our-friends__name">Timmy</div>
+                                <a class="our-friends__button-secondary" href="#!"><div class="our-friends__button-secondary_text">Learn more</div></a>
+                            </div>
+                            <div class="our-friends__cart">
+                                <img src="../../assets/images/pets-charly.png" alt="pets-charly" class="our-friends__pets">
+                                <div class="our-friends__name">Charly</div>
+                                <a class="our-friends__button-secondary" href="#!"><div class="our-friends__button-secondary_text">Learn more</div></a>
+                            </div>
+                            <div class="our-friends__cart">
+                                <img src="../../assets/images/pets-scarlet.png" alt="pets-scarlett" class="our-friends__pets">
+                                <div class="our-friends__name">Scarlett</div>
+                                <a class="our-friends__button-secondary" href="#!"><div class="our-friends__button-secondary_text">Learn more</div></a>
+                            </div>
+                            <div class="our-friends__cart">
+                                <img src="../../assets/images/pets-freddie.png" alt="pets-freddie" class="our-friends__pets">
+                                <div class="our-friends__name">Freddie</div>
+                                <a class="our-friends__button-secondary" href="#!"><div class="our-friends__button-secondary_text">Learn more</div></a>
+                            </div>
+                        </div>
+                        <div class="our-friends__navigation">
+                            <!--Мне просто понравились такие стрелки, не снимайте за них балы плез ☺-->
+                            <div class="our-friends__button our-friends__button_inactive">
+                                <div class="our-friends__button-text our-friends__text_inactive">«</div>
+                            </div>
+                            <div class="our-friends__button our-friends__button_inactive">
+                                <div class="our-friends__button-text our-friends__text_inactive">‹</div>
+                            </div>
+                            <div class="our-friends__button our-friends__button_active">
+                                <div class="our-friends__button-text">1</div>
+                            </div>
+                            <div class="our-friends__button">
+                                <div class="our-friends__button-text">›</div>
+                            </div>
+                            <div class="our-friends__button">
+                                <div class="our-friends__button-text">»</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer id="footer" class="footer">
+                    <div class="footer__content">
+                        <div class="footer__contacts-location">
+                            <div class="footer__title">For questions and suggestions</div>
+                            <a class="footer__block footer__block_link" href="mailto:email@shelter.com">
+                                <img src="../../assets/icons/icon-email.svg" alt="icon-email">
+                                <div class="footer__text">email@shelter.com</div>
+                            </a>
+                            <a class="footer__block footer__block_link"  href="tel:+136745677554">
+                                <img src="../../assets/icons/icon-phone.svg" alt="icon-phone">
+                                <div class="footer__text">+13 674 567 75 54</div>
+                            </a>
+                        </div>
+                        <div class="footer__contacts-location">
+                            <div class="footer__title">We are waiting for your visit</div>
+                            <a class="footer__block footer__block_location footer__block_link" target="_blank" href="https://www.google.ru/maps/place/The+Lighthouse+Theatre/@51.4732229,-0.0999392,15z/data=!4m5!3m4!1s0x48760481d985bffb:0x13c8431d8d139516!8m2!3d51.4763954!4d-0.0945347">
+                                <img src="../../assets/icons/icon-marker.svg" alt="icon-marker" class="footer__icon">
+                                <div class="footer__text footer__text-location footer__text-location-adress">1 Central Street, Boston (entrance from the store)</div>
+                            </a>
+                            <a class="footer__block footer__block_link" target="_blank" href="https://www.google.ru/maps/@51.4906921,-0.1083845,11.75z">
+                                <img src="../../assets/icons/icon-marker.svg" alt="icon-marker" class="footer__icon">
+                                <div class="footer__text footer__text-location">18 South Park, London</div>
+                            </a>
+                        </div>
+                        <img src="../../assets/images/footer-puppy.png" alt="footer-puppy" class="footer__puppy">
+                            
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+    </body>
+</html>

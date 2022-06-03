@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Arial';
+    src: local('Arial'), 
+         url('../../assets/fonts/arial/arial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: local('Georgia'), 
+         url('../../assets/fonts/georgia/georgia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.popup {
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    outline: 2px solid #ff11df;
+    transform: translate(50%, 50%);;
+}

@@ -1,0 +1,597 @@
+@font-face {
+    font-family: 'Arial';
+    src: local('Arial'), 
+         url('../../assets/fonts/arial/arial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: local('Georgia'), 
+         url('../../assets/fonts/georgia/georgia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.page {
+    min-width: 320px;/*
+    display: block;
+    /*min-width: 1100px;
+    width: 1280px;
+    margin: 0px auto;*/
+}
+
+.header {
+    position: sticky;
+    background: #FFFFFF;
+    z-index: 3;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    top: 0px;
+    /*outline: 2px solid #ff11df;*/
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.header__menu {
+    max-width: 1200px;
+    /*min-width: 360px;*/
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+}
+
+.header__nav-menu_burger {
+    display: none;
+}  
+
+.header__logo {
+    min-width: 184px;
+    height: 60px;
+}
+
+.header__logo_title {
+    height: 35px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 32px;
+    line-height: 30px;
+    letter-spacing: 0.05em;   
+    color: #545454;
+    margin-top: 0px;
+}
+
+.header__logo_subtitle {
+    width: 179px;
+    height: 15px;
+    margin: 0px auto 0px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 30px;
+    letter-spacing: 0.09em;
+    color: #292929;
+}
+
+.header__logo:link, .header__logo:visited {
+    text-decoration: none;
+    color: #292929;
+}
+
+.header__logo:hover {
+    text-decoration: none;
+}
+
+.header__nav {
+    display: block;
+    margin-left: auto;
+}
+
+.header__burger {
+    display: none;
+}
+
+.header__nav-menu {
+    height: 27px;
+    margin: auto 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 0px 35px;
+}
+
+.header_text {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #545454;
+}
+
+.header_text:link, .header_text:visited {
+    text-decoration: none;
+}
+
+.header_text:hover {
+    color: #2e2d2d;
+}
+
+.header_text.active {
+    color: #2e2d2d;
+    border-bottom: 2px solid #F1CDB3;
+    
+}
+
+.our-friends {
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #F6F6F6;
+}
+
+.our-friends__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    /*outline: 2px solid #ff11df;*/
+    padding: 80px 0px 100px;
+}
+
+.our-friends__heading {
+    width: 400px;
+    height: 90px;
+    margin: 0px auto;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.our-friends__card-container {
+    max-width: 1200px;
+    padding: 45px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.our-friends__cart {
+    width: 270px;
+    height: 435px;
+    margin: 15px 0px;
+    background: #FAFAFA;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.our-friends__cart :last-child {
+    margin-bottom: 30px;
+}
+
+.our-friends__cart:hover {
+    cursor: pointer;
+}
+
+.our-friends__cart:hover .our-friends__button-secondary {
+    background: #fab381;
+}
+
+.our-friends__name {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.our-friends__button-secondary {
+    width: 187px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    text-align: center;
+
+}
+
+.our-friends__button-secondary_text {
+    margin-top: 12px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+.our-friends__button-secondary:hover {
+    box-shadow: 4px 4px 39px 1px rgba(34, 60, 80, 0.18);
+}
+
+.our-friends__button-secondary:link, .our-friends__button-secondary:visited {
+    text-decoration: none;
+}
+
+.our-friends__navigation { 
+    /*Мне просто понравились такие стрелки, не снимайте за них балы плез ☺*/
+    display: flex;
+    justify-content: space-between;
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+.our-friends__button {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.our-friends__button:hover {
+    background-color: #F1CDB3;
+}
+
+.our-friends__button-text {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 115%;
+    margin-top: 5px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+.our-friends__button_inactive {
+    cursor: default;
+    border: 2px solid #CDCDCD;
+}
+
+.our-friends__button_inactive:hover {
+    background-color: #F6F6F6;
+}
+
+.our-friends__text_inactive {
+    color: #CDCDCD;
+}
+
+.our-friends__button_active {
+    background-color: #F1CDB3;
+    cursor: default;
+}
+
+.footer {
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) #211F20;
+    padding-top: 40px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.footer__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    /*padding: 0 40px;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contacts-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 60px;
+    height: 234px;
+}
+
+.footer__title {
+    width: 278px;
+    height: 90px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.footer__block {
+    width: auto;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__block_location {
+    width: 302px;
+}
+
+.footer__text {
+    width: 191px;
+    height: 23px;
+    margin-left: 20px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.05em;
+    color: #F1CDB3;
+}
+
+.footer__text-location {
+    width: 260px;
+}
+
+.footer__text-location-adress {
+    height: 46px;
+}
+
+.footer__block_link:link, .footer__block_link:visited {
+    text-decoration: none;
+}
+
+.footer__block_link:hover {
+    text-decoration: underline;
+    color: #F1CDB3;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .our-friends {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .our-friends__content {
+        padding: 80px 0px 76px;
+    }
+    
+    .our-friends__cart:nth-child(7)  {
+        display: none;
+    }
+
+    .our-friends__cart:nth-child(8)  {
+        display: none;
+    }
+
+    .our-friends__cart:nth-child(2n)  {
+        margin-right: 54px;
+    }
+
+    .our-friends__cart:nth-child(2n+1)  {
+        margin-left: 54px;
+    }    
+
+    .our-friends__card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 15px 0px 25px;
+    }
+
+    .footer {
+        padding: 30px 30px 0;
+    }
+
+    .footer__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 768px;
+        gap: 0px 60px;
+        padding: 0;
+    }
+
+    .footer__contacts-location {
+        margin-top: 0px;
+        margin-bottom: 65px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .page {
+        max-width: 767px;
+    } 
+
+    .content-dark {
+        filter: brightness(40%);
+        transition: 0.25s ease-out; 
+    }
+
+    .header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .header__logo {
+        position: relative;
+        z-index: 4;
+    }
+
+     .header__burger {
+        position: relative;
+        width: 30px;
+        height: 22px;
+        display: block;
+        margin-right: 43px;
+        cursor: pointer;
+        z-index: 5;
+        transition: 0.25s ease-out; 
+        fill: #F1CDB3; 
+    }
+
+    .header__nav-menu {
+        display: none;
+        transition-duration: 1s;
+    }
+
+    .header__burger:link, .header__burger:visited {
+        text-decoration: none;
+    }
+    
+    .header__burger:hover {
+        text-decoration: none;
+    }
+
+    .header__burger-active {
+        transform: rotate(-90deg);
+        transition-duration: .25s;
+        fill: #F1CDB3;
+    }
+    
+    .header__burger:active {
+        opacity: 0.75;
+    }
+
+    .header__burger-line:before {
+        transform: rotate(-180deg);
+        transition-duration: .25s;
+    }
+    .header__burger-line:after {
+        transform: rotate(-90deg);
+        transition-duration: .25s;
+    }
+
+    .header__nav-menu_burger {
+        position: fixed;
+        right: -120%;
+        top: 0px;
+        width: 320px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #292929;
+        z-index: 2;
+        overflow-y: auto;
+        transition: 0.5s ease-out;
+    }
+
+    .header__nav-menu_burger-drive {
+        position: fixed;
+        right: 0%;
+    }
+
+    .header_text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 243px;
+        height: 327px;
+    }
+
+    .header_text:link, .header_text:visited {
+        font-size: 32px;
+        color: #CDCDCD
+    }
+
+    .header_text.active {
+        color: #FAFAFA;
+    }
+
+    .header_text:hover {
+        color: #FAFAFA;
+    }
+
+    .our-friends {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .our-friends__content {
+        padding: 42px 0px;
+    }
+    
+    .our-friends__card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 360px;
+        margin: 0 auto;
+        padding: 27px 0px;
+    }
+    
+    .our-friends__cart:nth-child(n+4):nth-child(-n+8) {
+        display: none;
+    }
+
+    .our-friends__heading {
+        width: auto;
+        height: 64px;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+
+    .our-friends__navigation {
+        /*Мне просто понравились такие стрелки, не снимайте за них балы плез ☺*/
+        max-width: 300px;
+    }
+    
+    .footer {
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .footer__content {
+        margin: 0 auto;
+        /*padding: 0 40px;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__contacts-location {
+        height: 208px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+        margin-bottom: 40px;
+        margin-top: 0px;
+    }
+
+    .footer__title {
+        text-align: center;
+        font-size: 25px;
+        letter-spacing: 0.05em;
+    }
+
+    .footer__puppy {
+        width: 260px;
+        height: 269px;
+    }
+}
